@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     background-color: #FAFAFA;
 }
+
 a {
     text-decoration: none;
 }
@@ -24,7 +25,6 @@ ul {
     padding: 0 20px;
 }
 
-/* ================= Variables ================= */
 :root {
     --primary-blue: #1D4ED8;
     --primary-blue-hover: #1E40AF;
@@ -34,7 +34,6 @@ ul {
     --white: #FFFFFF;
 }
 
-/* ================= Buttons ================= */
 .btn-primary {
     display: inline-block;
     background-color: var(--primary-blue);
@@ -43,7 +42,6 @@ ul {
     border-radius: 6px;
     font-weight: 600;
     font-size: 14px;
-    /* transition: background 0.3s ease; */
 }
 
 .btn-primary:hover {
@@ -67,7 +65,6 @@ ul {
     color: var(--white);
 }
 
-/* ================= Navbar ================= */
 .navbar {
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
@@ -101,18 +98,17 @@ ul {
     font-size: 14px;
     transition: color 0.2s;
 }
+
 .nav-links a:hover {
-    color: var(--primary-blue); 
+    color: var(--primary-blue);
 }
 
-/* ================= Hero Banner ================= */
 .hero {
     position: relative;
-    /* Banner Image */
-    background-image: url('../assets/banner.jpg'); 
+    background-image: url('../assets/banner.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 650px; 
+    min-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +118,10 @@ ul {
 
 .hero-overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(15, 23, 42, 0.75);
     z-index: 1;
 }
@@ -130,12 +129,12 @@ ul {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 800px; 
+    max-width: 800px;
     padding: 20px;
 }
 
 .hero-content h1 {
-    font-size: 56px; 
+    font-size: 56px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -146,13 +145,12 @@ ul {
     font-weight: 700;
 }
 
-.hero-content p { /* Paragraph Text */
+.hero-content p {
     font-size: 18px;
     margin-bottom: 30px;
     color: #E2E8F0;
 }
 
-/* ================= Section Titles ================= */
 .section-title {
     text-align: center;
     font-size: 32px;
@@ -168,7 +166,6 @@ ul {
     margin-bottom: 40px;
 }
 
-/* ================= Meet the Speakers ================= */
 .speakers-section {
     padding: 80px 0;
     background-color: var(--white);
@@ -186,7 +183,7 @@ ul {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
 }
 
@@ -198,7 +195,7 @@ ul {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    object-position: top; /* ছবি যেন মাথা থেকে ফোকাস হয় */
+    object-position: top;
 }
 
 .speaker-info {
@@ -226,7 +223,6 @@ ul {
     color: var(--text-muted);
 }
 
-/* ================= Secure Your Spot Section / Pricing Section ================= */
 .pricing-section {
     padding: 80px 0;
 }
@@ -247,7 +243,7 @@ ul {
     width: 320px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .pricing-card.featured {
@@ -255,7 +251,7 @@ ul {
     color: var(--white);
     border-color: var(--dark-bg);
     transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .plan-name {
@@ -315,13 +311,12 @@ ul {
     color: #60A5FA;
 }
 
-.pricing-card .btn-outline, 
+.pricing-card .btn-outline,
 .pricing-card .btn-primary {
     text-align: center;
     width: 100%;
 }
 
-/* ================= Our Sponsors Section ================= */
 .sponsors-section {
     padding: 60px 0;
     background-color: var(--white);
@@ -353,12 +348,9 @@ ul {
     color: var(--dark-bg);
 }
 
-
-/* ================= Footer ================= */
 .footer {
-    /* ekhane Color Add kora hoiche */
-    background-color: var(--dark-bg); 
-    padding: 70px 20px 30px; 
+    background-color: var(--dark-bg);
+    padding: 70px 20px 30px;
     color: var(--white);
 }
 
@@ -385,22 +377,21 @@ ul {
 }
 
 .social-links a {
-    /* Social Media Link Colors */
-    color: #94A3B8; 
+    color: #94A3B8;
     font-size: 22px;
     display: inline-block;
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    color: var(--white); 
-    transform: translateY(-4px); 
+    color: var(--white);
+    transform: translateY(-4px);
 }
 
 .footer-divider {
     border: 0;
     height: 1px;
-    background: #1E293B; 
+    background: #1E293B;
     margin-bottom: 25px;
 }
 
